@@ -1,0 +1,48 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# TypeScript
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+*.log
+
+# IDEs / Editores
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# SO archivos
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*.local
+
+# Output de pruebas o cobertura
+coverage/
+nyc_output/
+
+# Archivos temporales
+*.tmp
+*.swp
+*.bak
+
+# Sistema operativo
+ehthumbs.db
+Icon?
+desktop.ini
+
+# VS Code settings backup
+.vscode-test/
