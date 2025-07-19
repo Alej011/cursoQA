@@ -18,3 +18,5 @@ array.forEach(element => {
 
 console.log(array);
 console.log(`El array tiene ${array.length} elementos.`);
+
+console.log(`El primer elemento del array es: ${array[0]}`);
