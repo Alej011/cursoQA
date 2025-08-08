@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"  
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "test": "vitest"
   },
   "keywords": [],
+  "type": "module",
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
   }
 }
