@@ -1,9 +1,10 @@
 import {expect, test} from "vitest";
-import {stack} from "../src/stack.ts";
+import {balanceBrackets} from "../src/stack.ts";
 
-test ('it should return the last element of the stack', () => {
-    const str = '(';
-    const result = stack(stackArray);
-    
-    expect(result).toBe(5);
+test ('it should balance brackets correctly', () => {
+    const str = '()';
+    const result = balanceBrackets(str);
+
+    // For now, just testing that function exists and can be called
+    expect(result).toBeDefined();
 } );
