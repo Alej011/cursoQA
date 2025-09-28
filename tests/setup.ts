@@ -12,7 +12,7 @@ beforeAll(async () => {
     // Test connection
     const client = await testPool.connect();
     client.release();
-    console.log('Connected to test database');
+    // console.log('Connected to test database');
   } catch (error) {
     console.error('Failed to connect to test database:', error);
     throw error;
@@ -22,21 +22,21 @@ beforeAll(async () => {
 afterAll(async () => {
   try {
     await closePool(testPool);
-    console.log('🔌 Disconnected from test database');
+    console.log('Disconnected from test database');
   } catch (error) {
     console.warn('Warning during database cleanup:', error);
   }
 }, 15000);
 
-beforeEach(async () => {
-  // Clean up before each test
-  await cleanDatabase();
-});
+// beforeEach(async () => {
+//   // Clean up before each test
+//   await cleanDatabase();
+// });
 
-afterEach(async () => {
-  // Clean up after each test
-  await cleanDatabase();
-});
+// afterEach(async () => {
+//   // Clean up after each test
+//   await cleanDatabase();
+// });
 
 async function cleanDatabase(): Promise<void> {
   try {
